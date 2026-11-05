@@ -15,7 +15,7 @@
     .skip{position:absolute;top:-100px;left:20px;background:var(--card);padding:12px;z-index:5}.skip:focus{top:10px}
     .wrap{width:min(100% - 40px,880px);margin:auto}
     header{padding:30px 0;border-bottom:1px solid var(--line)}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .brand{font-size:24px;font-weight:800;letter-spacing:-.8px;color:var(--ink);text-decoration:none}
+    .brand{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}.brand img{display:block;width:190px;max-width:48vw;height:auto}
     nav{display:flex;gap:22px;font-size:14px}nav a{text-decoration:none}
     main{padding:54px 0 32px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 10px}
     h1{font-size:clamp(32px,6vw,52px);line-height:1.13;letter-spacing:-1.8px;margin:0 0 20px;overflow-wrap:anywhere}
@@ -27,14 +27,14 @@
     p{margin:0 0 16px}p:last-child{margin-bottom:0}ul{padding-left:23px;margin:12px 0 18px}li+li{margin-top:8px}
     address{font-style:normal}.path{font-weight:600}.small{font-size:14px;color:var(--muted)}
     footer{padding:26px 0 36px;font-size:13px;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    @media(max-width:480px){body{font-size:16px}.wrap{width:calc(100% - 28px)}main{padding-top:32px}.document{border-radius:18px;padding:22px 19px}h2{font-size:21px}nav{gap:16px}.brand{font-size:22px}}
+    @media(max-width:480px){body{font-size:16px}.wrap{width:calc(100% - 28px)}main{padding-top:32px}.document{border-radius:18px;padding:22px 19px}h2{font-size:21px}nav{gap:16px}.brand img{width:155px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     @media print{body{background:white;color:black}.document{border:0;padding:0}.test-note{background:none}nav,.skip{display:none}main{padding-top:24px}}
   </style>
 </head>
 <body>
 <a class="skip" href="#datenschutz">Zum Inhalt</a>
-<header><div class="wrap"><a class="brand" href="#">Crack That!</a><nav aria-label="Seitennavigation"><a href="#datenschutz">Datenschutz</a><a href="#kontakt">Kontakt</a></nav></div></header>
+<header><div class="wrap"><a class="brand" href="#" aria-label="Crack That! – nach oben"><img src="./logo.png" alt="Crack That!"></a><nav aria-label="Seitennavigation"><a href="#datenschutz">Datenschutz</a><a href="#kontakt">Kontakt</a></nav></div></header>
 <main class="wrap" id="datenschutz">
   <p class="eyebrow">Informationen zur App</p>
   <h1>Datenschutzerklärung</h1>
